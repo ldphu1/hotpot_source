@@ -1,0 +1,1 @@
+ALTER TABLE dot_giam_gia ADD active BIT DEFAULT 1;

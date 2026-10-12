@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Xác nhận đặt bàn - FourSpice Hotpot</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f8f9fa; font-family: 'Segoe UI', Arial, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0" style="background-color: #f8f9fa; padding: 30px 10px;" width="100%">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0"
+                   style="max-width: 600px; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e1e1e1;"
+                   width="100%">
+
+                <tr>
+                    <td align="center" style="padding: 35px 40px 20px 40px; border-bottom: 2px solid #8c0000;">
+                        <img alt="FourSpice Hotpot" src="cid:logoImage"
+                             style="width: 80px; height: auto; display: block; margin: 0 auto;">
+                        <div style="font-size: 22px; font-weight: bold; color: #8c0000; letter-spacing: 3px; text-transform: uppercase; margin: 0;">
+                            FOURSPICE HOTPOT
+                        </div>
+                        <div style="font-size: 8px; font-weight: bold; color: #646464; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 4px;">
+                            Trải nghiệm lẩu Thái cao cấp
+                        </div>
+
+                        <div style="margin-top: 20px; display: inline-block; background-color: #8c0000; color: #ffffff; padding: 6px 20px; border-radius: 20px; font-size: 11px; font-weight: bold; letter-spacing: 1px;">
+                            🎉 ĐẶT BÀN THÀNH CÔNG
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 30px 40px;">
+                        <p style="margin: 0 0 15px 0; font-size: 14px; color: #282828; line-height: 1.6;">
+                            Xin chào <strong style="color: #282828;">{{ TEN_KHACH }}</strong>,
+                        </p>
+                        <div style="margin: 20px 0; background-color: #fff8f8; border: 2px dashed #8c0000; border-radius: 10px; padding: 18px 20px; text-align: center;">
+                            <div style="font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;">
+                                🎫 Mã xác nhận — Vui lòng xuất trình khi đến nhà hàng
+                            </div>
+                            <div style="font-size: 26px; font-weight: bold; color: #8c0000; letter-spacing: 4px;">
+                                {{ MA_DAT_BAN }}
+                            </div>
+                            <div style="font-size: 11px; color: #aaaaaa; margin-top: 6px;">
+                                Nhân viên sẽ dùng mã này để xác nhận lịch đặt bàn của bạn
+                            </div>
+                        </div>
+
+                        <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 25px;" width="100%">
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Số điện thoại
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ SO_DIEN_THOAI }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Mã đặt bàn
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #8c0000; text-align: right;">
+                                    {{ MA_DAT_BAN }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Bàn ăn
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #8c0000; text-align: right;">
+                                    {{ BAN_AN }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Thời gian đến
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ THOI_GIAN }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Số lượng khách
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ SO_NGUOI }} người
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Tiền đặt cọc
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #8c0000; text-align: right;">
+                                    {{ TIEN_COC }}
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 11px; font-weight: bold; color: #888888; text-transform: uppercase;">
+                                    Ghi chú
+                                </td>
+                                <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ GHI_CHU }}
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        {{ MON_SECTION }}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center"
+                        style="padding: 30px 40px; background-color: #fafafa; border-top: 1px solid #eeeeee;">
+                        <div style="font-size: 12px; color: #888888; line-height: 1.6; text-align: center;">
+                            Nếu có bất kỳ thay đổi nào hoặc cần hỗ trợ gấp, vui lòng liên hệ hotline: <strong
+                                style="color: #282828;">1900 xxxx</strong>
+                            <br>Địa chỉ: Đường Đại Sơn, Sơn Động, Bắc Giang
+                        </div>
+                        <hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+                        <div style="font-size: 11px; color: #b0b0b0; text-align: center;">
+                            &copy; 2026 FourSpice Hotpot. All rights reserved.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+ALTER TABLE hoa_don
+ALTER COLUMN tien_coc_hoan DECIMAL(12,2) NULL;
+
+ALTER TABLE hoa_don
+ALTER COLUMN tien_coc_bi_mat DECIMAL(12,2) NULL;

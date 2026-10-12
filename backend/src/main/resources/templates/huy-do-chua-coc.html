@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Thông báo hủy đơn đặt bàn</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f8f9fa; font-family: 'Segoe UI', Arial, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0" style="background-color: #f8f9fa; padding: 30px 10px;" width="100%">
+    <tr>
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0"
+                   style="max-width: 600px; background-color: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e1e1e1;"
+                   width="100%">
+
+                <!-- Header -->
+                <tr>
+                    <td align="center" style="padding: 35px 40px 20px 40px;">
+                        <img alt="FourSpice Hotpot" src="cid:logoImage"
+                             style="width: 80px; height: auto; display: block; margin-bottom: 12px;">
+                        <div style="font-size: 22px; font-weight: bold; color: #8c0000; letter-spacing: 3px; text-transform: uppercase;">
+                            FOURSPICE HOTPOT
+                        </div>
+                        <div style="margin-top: 15px; font-size: 13px; font-weight: bold; color: #646464;">
+                            <span style="vertical-align: middle;"></span> THÔNG BÁO HỦY ĐẶT BÀN
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Content -->
+                <tr>
+                    <td style="padding: 0 40px 30px 40px;">
+                        <p style="font-size: 14px; color: #282828;">Xin chào <strong>{{ TEN_KHACH }}</strong>,</p>
+                        <p style="font-size: 14px; color: #646464; line-height: 1.6;">
+                            Hệ thống rất tiếc phải thông báo rằng yêu cầu đặt bàn của bạn đã bị <strong>tự động
+                            hủy</strong> do chúng tôi chưa nhận được khoản thanh toán đặt cọc trong thời gian quy định.
+                        </p>
+
+                        <div style="background-color: #fff5f5; border: 1px solid #f8d7da; padding: 15px; border-radius: 8px; margin: 20px 0; font-size: 13px; color: #721c24;">
+                            <strong>Lý do:</strong> Quá hạn thanh toán tiền cọc.
+                        </div>
+
+                        <h3 style="color:#8c0000; font-size: 15px; text-transform: uppercase; margin-bottom: 15px;">Chi
+                            tiết đơn đã hủy</h3>
+                        <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 25px;" width="100%">
+                            <tr>
+                                <td style="padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 12px; color: #888;">
+                                    Thời gian dự kiến
+                                </td>
+                                <td style="padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ THOI_GIAN }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 12px; color: #888;">
+                                    Số lượng khách
+                                </td>
+                                <td style="padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; font-weight: bold; color: #282828; text-align: right;">
+                                    {{ SO_NGUOI }} người
+                                </td>
+                            </tr>
+                        </table>
+
+                        {{ MON_SECTION }}
+
+                        <p style="font-size: 13px; color: #646464; margin-top: 30px;">
+                            Nếu bạn vẫn có nhu cầu dùng bữa, vui lòng thực hiện đặt bàn mới hoặc liên hệ trực tiếp với
+                            chúng tôi qua Hotline <strong>0332654198</strong> để được hỗ trợ nhanh nhất.
+                        </p>
+
+                        <!-- CTA -->
+                        <div style="text-align:center; margin-top:30px;">
+                            <a href="https://fourspicehotpot.vn"
+                               style="background-color:#8c0000; color:#ffffff; padding:14px 35px;
+                                      text-decoration:none; font-weight:bold; border-radius:4px;
+                                      display:inline-block; font-size: 14px;">
+                                THỰC HIỆN ĐẶT BÀN MỚI
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td align="center"
+                        style="padding: 30px 40px; background-color: #fafafa; border-top: 1px solid #eeeeee;">
+                        <div style="font-size: 11px; color: #b0b0b0;">
+                            © 2026 FourSpice Hotpot. Đường Đại Sơn, Sơn Động, Bắc Giang.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

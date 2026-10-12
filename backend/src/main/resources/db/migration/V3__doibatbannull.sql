@@ -1,0 +1,2 @@
+ALTER TABLE dat_ban
+ALTER COLUMN id_ban_an BIGINT NULL;

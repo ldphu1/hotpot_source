@@ -1,0 +1,2 @@
+ALTER TABLE dbo.lich_su_thanh_toan
+DROP CONSTRAINT DF__lich_su_t__thoi___2645B050;

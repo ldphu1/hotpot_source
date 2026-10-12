@@ -1,0 +1,25 @@
+
+CREATE TRIGGER trg_gen_ma_phuong_thuc_thanh_toan
+    ON phuong_thuc_thanh_toan
+    AFTER INSERT
+AS
+BEGIN
+SET NOCOUNT ON;
+DECLARE @id BIGINT,@ma NVARCHAR(50);
+DECLARE cur CURSOR FOR SELECT id FROM inserted;
+OPEN cur;
+FETCH NEXT FROM cur INTO @id;
+WHILE @@FETCH_STATUS=0
+BEGIN
+WHILE 1=1
+BEGIN
+SET @ma='PTTT-'+CHAR(65+ABS(CHECKSUM(NEWID()))%26)+CAST(ABS(CHECKSUM(NEWID()))%10 AS VARCHAR)+CHAR(65+ABS(CHECKSUM(NEWID()))%26)+CAST(ABS(CHECKSUM(NEWID()))%10 AS VARCHAR);
+IF NOT EXISTS(SELECT 1 FROM phuong_thuc_thanh_toan WHERE ma_phuong_thuc=@ma) BREAK;
+END
+UPDATE phuong_thuc_thanh_toan SET ma_phuong_thuc=@ma WHERE id=@id;
+FETCH NEXT FROM cur INTO @id;
+END
+CLOSE cur;
+DEALLOCATE cur;
+END
+

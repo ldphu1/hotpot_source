@@ -1,0 +1,1 @@
+ALTER TABLE tin_nhan ADD loai_nguoi_gui VARCHAR(20) NULL

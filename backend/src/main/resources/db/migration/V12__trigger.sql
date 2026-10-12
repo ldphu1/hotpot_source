@@ -1,0 +1,26 @@
+
+CREATE TRIGGER trg_gen_ma_giao_dich
+    ON lich_su_thanh_toan
+    AFTER INSERT
+AS
+BEGIN
+SET NOCOUNT ON;
+DECLARE @id BIGINT,@ma NVARCHAR(100);
+DECLARE cur CURSOR FOR SELECT id FROM inserted;
+OPEN cur;
+FETCH NEXT FROM cur INTO @id;
+WHILE @@FETCH_STATUS=0
+BEGIN
+WHILE 1=1
+BEGIN
+SET @ma=RIGHT(CAST(ABS(CHECKSUM(NEWID())) AS VARCHAR(20))+CAST(ABS(CHECKSUM(NEWID())) AS VARCHAR(20)),10);
+IF NOT EXISTS(SELECT 1 FROM lich_su_thanh_toan WHERE ma_giao_dich=@ma) BREAK;
+END
+UPDATE lich_su_thanh_toan SET ma_giao_dich=@ma WHERE id=@id;
+FETCH NEXT FROM cur INTO @id;
+END
+CLOSE cur;
+DEALLOCATE cur;
+END
+
+

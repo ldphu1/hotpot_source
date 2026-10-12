@@ -1,0 +1,45 @@
+/* ===== DARK MODE CORE ===== */
+body.dark-mode {
+  background-color: #0f0f0f;
+  color: #e5e5e5;
+}
+
+/* ===== HEADER ===== */
+body.dark-mode header {
+  background: #181818 !important;
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+/* ===== SIDEBAR ===== */
+body.dark-mode .sidebar {
+  background: #141414;
+  border-right: 1px solid #2a2a2a;
+}
+
+/* Menu item */
+body.dark-mode .nav-link {
+  color: #bdbdbd;
+}
+
+body.dark-mode .nav-link:hover {
+  background: #222;
+}
+
+body.dark-mode .nav-link.active {
+  background: #2a2a2a !important;
+  color: #fff !important;
+}
+
+/* ===== INPUT ===== */
+body.dark-mode input {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+/* ===== CARD / CONTENT ===== */
+body.dark-mode .card,
+body.dark-mode .content-box {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+}
